@@ -1,5 +1,5 @@
-# 5-dinter
-
+# Dinter-Interior-Designs
+# Live Demo : https://abduljaleel-dinter.netlify.app/
 ## Project setup
 ```
 npm install
