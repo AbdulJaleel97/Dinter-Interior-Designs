@@ -3,17 +3,21 @@
     <v-container>
       <h2 class="text-center header">Our Portfolio of Successful Projects</h2>
       <div class="content">
-        <div class="item" v-for="project in projects" :key="project.id" @click="
-          this.$router.push({
-            name: 'project',
-            params: {
-              link: project.link,
-            },
-          })
-          ">
+        <div
+          class="item"
+          v-for="project in projects"
+          :key="project.id"
+          @click="
+            this.$router.push({
+              name: 'project',
+              params: {
+                link: project.link,
+              },
+            })
+          "
+        >
           <img :src="project.src" alt="Project Image" />
-          <div class="overlay">
-          </div>
+          <div class="overlay"></div>
           <div class="text">
             <h2>{{ project.title }}</h2>
             <p>{{ project.category }}</p>
@@ -115,9 +119,12 @@ export default {
         height: 100%;
         top: 0;
         left: 0;
-        background-image: linear-gradient(rgba(19, 18, 13, 0) 17%,
-            rgba(19, 18, 13, 0.8));
+        background-image: linear-gradient(
+          rgba(19, 18, 13, 0) 17%,
+          rgba(19, 18, 13, 0.8)
+        );
       }
     }
   }
-}</style>
+}
+</style>

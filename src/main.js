@@ -4,7 +4,7 @@ import router from "./router";
 import store from "./store";
 
 // Main Style
-import "@/style/style.css";
+// import "@/style/style.css";
 
 // Vuetify
 import "vuetify/styles";

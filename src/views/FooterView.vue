@@ -59,7 +59,7 @@
           </ul>
         </div>
         <div class="letter">
-          <h2>Newsletter</h2>
+          <h2 style="font-weight: 600">Newsletter</h2>
           <div class="form">
             <input type="email" placeholder="Enter your Email" />
             <input type="submit" value="Submit" />

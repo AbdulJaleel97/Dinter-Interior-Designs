@@ -208,8 +208,8 @@ export default {};
       }
     }
     input {
-      background-color: #ffdeba;
-      border: 1px solid #ffdeba;
+      background-color: var(--main-color) !important;
+      border: 1px solid var(--main-color) !important;
       border-radius: 10px;
       margin-bottom: 20px;
       width: 100%;
@@ -218,7 +218,7 @@ export default {};
       font-weight: bold;
       letter-spacing: 1.1px;
       &:focus {
-        background-color: var(--main-color);
+        background-color: var(--main-color) !important;
       }
     }
     label {
@@ -230,11 +230,10 @@ export default {};
       resize: none;
       height: 150px;
       width: 100%;
-      background-color: #ffdeba;
+      background-color: var(--main-color);
       outline: none;
-      border: 1px solid #ffdeba;
+      border: 1px solid var(--main-color);
       border-radius: 10px;
-      margin-top: 20px;
       padding: 10px 15px;
       font-weight: bold;
     }
@@ -261,6 +260,12 @@ export default {};
     @media (max-width: 767px) {
       height: 1000px;
     }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--main-color) inset !important;
   }
 }
 </style>
